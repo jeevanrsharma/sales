@@ -24,8 +24,8 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
-    return
-      Container(
+    return Scaffold(
+        body: Container(
           decoration: BoxDecoration(
               image: DecorationImage(
                   image: AssetImage('assets/images/loginTeal.jpg'), fit: BoxFit.cover
@@ -133,7 +133,8 @@ class _LoginPageState extends State<LoginPage> {
                   ],
                 ),
               )),
-        );
+        ),
+      );
   }
   getData(String userName, String password) async {
     Login login = Login(userName: userName, password: password);

@@ -9,6 +9,7 @@ class LoginController extends GetxController {
     Login login = Login(userName: userName, password: password);
     // print(userName);
     // print(password);
-    services.bill(login);
+    // services.bill(login);
+    Get.toNamed("/dashboard");
   }
 }
